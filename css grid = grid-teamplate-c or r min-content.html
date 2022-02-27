@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web pemula</title>
+    <style>
+        .container{
+            width: 60%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr min-content 1fr;
+        }
+        .item{
+            background-color: aqua;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .item:nth-child(even){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">hello indonesia</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        
+    </div>
+</body>
+</html>
