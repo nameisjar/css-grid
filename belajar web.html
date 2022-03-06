@@ -16,10 +16,11 @@
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: 
-                'header header header'
-                'sidebar sidebar sidebar'
-                'content content content'
-                'footer footer footer';
+            'header header header'
+            'sidebar content content'
+            'sidebar content content'
+            'footer footer footer';
+            
     }
         .item{
             width: 100%;
@@ -29,6 +30,7 @@
             align-items: center;
             padding: 100px;
             box-sizing: border-box;
+            
         }
         .header{
             background-color: red;
@@ -46,12 +48,12 @@
             background-color: brown;
             grid-area: footer;
         }
-        @media screen and (min-width: 576px) {
+        @media (max-width: 576px) {
             .container{
                 grid-template-areas: 
                     'header header header'
-                    'sidebar content content'
-                    'sidebar content content'
+                    'sidebar sidebar sidebar'
+                    'content content content'
                     'footer footer footer';
                 }
         }
@@ -65,3 +67,4 @@
         <div class="item footer">footer</div>
 </body>
 </html>
+
